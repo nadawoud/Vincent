@@ -15,13 +15,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vJN-DM-7Zc">
+                                <rect key="frame" x="20" y="84" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vJN-DM-7Zc" secondAttribute="height" multiplier="1:1" id="qeT-Dl-dc3"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LIB-3I-PQf">
+                                <rect key="frame" x="173.5" y="498" width="67" height="67"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgg-XR-kgd">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="lgg-XR-kgd" secondAttribute="height" multiplier="1:1" id="epR-pM-X4a"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vJN-DM-7Zc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0zQ-xF-acJ"/>
+                            <constraint firstItem="LIB-3I-PQf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1MP-Pr-Jvh"/>
+                            <constraint firstItem="LIB-3I-PQf" firstAttribute="top" secondItem="vJN-DM-7Zc" secondAttribute="bottom" constant="40" id="9O7-CG-oG0"/>
+                            <constraint firstItem="vJN-DM-7Zc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="lSG-fy-u7h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vJN-DM-7Zc" secondAttribute="trailing" constant="20" id="v0z-c3-gQv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="84"/>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
         </scene>
     </scenes>
     <resources>
