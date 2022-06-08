@@ -13,7 +13,6 @@
 		61A74B22284F05510024AADB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A74B20284F05510024AADB /* Main.storyboard */; };
 		61A74B24284F05560024AADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61A74B23284F05560024AADB /* Assets.xcassets */; };
 		61A74B27284F05560024AADB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A74B25284F05560024AADB /* LaunchScreen.storyboard */; };
-		61FDA46A284F116200945596 /* GPUImage in Frameworks */ = {isa = PBXBuildFile; productRef = 61FDA469284F116200945596 /* GPUImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61FDA46A284F116200945596 /* GPUImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +84,6 @@
 			);
 			name = Vincent;
 			packageProductDependencies = (
-				61FDA469284F116200945596 /* GPUImage */,
 			);
 			productName = Vincent;
 			productReference = 61A74B17284F05510024AADB /* Vincent.app */;
@@ -117,7 +114,6 @@
 			);
 			mainGroup = 61A74B0E284F05510024AADB;
 			packageReferences = (
-				61FDA468284F116200945596 /* XCRemoteSwiftPackageReference "GPUImage3" */,
 			);
 			productRefGroup = 61A74B18284F05510024AADB /* Products */;
 			projectDirPath = "";
@@ -366,25 +362,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		61FDA468284F116200945596 /* XCRemoteSwiftPackageReference "GPUImage3" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/BradLarson/GPUImage3.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		61FDA469284F116200945596 /* GPUImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 61FDA468284F116200945596 /* XCRemoteSwiftPackageReference "GPUImage3" */;
-			productName = GPUImage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 61A74B0F284F05510024AADB /* Project object */;
 }
