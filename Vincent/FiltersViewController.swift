@@ -7,8 +7,6 @@
 
 import UIKit
 import CoreImage
-import CoreAudio
-import CoreMedia
 
 class FiltersViewController: UIViewController {
     

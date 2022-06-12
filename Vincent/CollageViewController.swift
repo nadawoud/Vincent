@@ -8,11 +8,11 @@
 import UIKit
 
 class CollageViewController: UIViewController {
-
+    
+    @IBOutlet weak var collageView: CollageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
 

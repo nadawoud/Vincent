@@ -170,10 +170,27 @@
                     <view key="view" contentMode="scaleToFill" id="GVX-YN-J6d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qI0-7y-1dV" customClass="CollageView" customModule="Vincent" customModuleProvider="target">
+                                <rect key="frame" x="20" y="84" width="374" height="374"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qI0-7y-1dV" secondAttribute="height" multiplier="1:1" id="4pU-DP-jPd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Cnt-QG-y28"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cnt-QG-y28" firstAttribute="trailing" secondItem="qI0-7y-1dV" secondAttribute="trailing" constant="20" id="00a-I3-w8b"/>
+                            <constraint firstItem="qI0-7y-1dV" firstAttribute="top" secondItem="Cnt-QG-y28" secondAttribute="top" constant="40" id="GZn-RX-ATS"/>
+                            <constraint firstItem="qI0-7y-1dV" firstAttribute="leading" secondItem="Cnt-QG-y28" secondAttribute="leading" constant="20" id="XOs-YG-G2W"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Collage" image="photo.on.rectangle.fill" catalog="system" id="8T6-he-32z"/>
+                    <connections>
+                        <outlet property="collageView" destination="qI0-7y-1dV" id="CJx-8G-S1q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCe-RK-iND" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,6 +202,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="kNk-Xz-cCM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1ER-Of-7tZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
